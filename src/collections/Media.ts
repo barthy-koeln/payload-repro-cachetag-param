@@ -11,6 +11,8 @@ export const Media: CollectionConfig = {
         return {
           ...doc,
           thumbnailURL: `/_next/image?url=${doc.url}&w=384&q=75`
+          // FIXME use this to verify that only the cacheTag is causing the issue
+          // thumbnailURL: `/_next/image?url=${doc.url}&w=384&q=75&cacheTag=`
         }
       },
     ],
